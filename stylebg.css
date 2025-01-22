@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    background-color: #F7F6F2; /* Latar belakang utama (Off-white/Abu Pastel Muda) */
+    color: #2F2E2C; /* Warna teks utama (Abu Tua ke Hitam) */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Body and HTML styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content styling */
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #DDD5C7; /* Warna sekunder (Beige Pudar) */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Pastikan navbar berada di atas elemen lainnya */
+    width: 100%;  /* Pastikan navbar memenuhi lebar layar */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.navbar-dark {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.nav-link {
+    color: #2F2E2C; /* Warna teks utama pada navbar */
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-item {
+    padding: 0.25rem 0.5rem; /* Mengurangi padding pada setiap item */
+    font-size: 0.9rem; /* Mengurangi ukuran font item navbar */
+}
+
+.nav-link:hover {
+    color: #A69279; /* Warna tombol utama (Coklat Kopi Susu) */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-family: 'Cinzel', serif; /* Font klasik yang kuat */
+    font-size: 1.2rem; /* Ukuran lebih besar agar menonjol */
+    font-weight: 700; /* Tebal */
+    color: #2F2E2C; /* Warna utama */
+    text-transform: uppercase; /* Teks kapital */
+    letter-spacing: 1px; /* Jarak antar huruf untuk tampilan mewah */
+}
+
+.navbar-brand:hover {
+    color: #A69279; /* Warna saat hover */
+    text-decoration: none; /* Hilangkan garis bawah */
+}
+
+/* Logo dalam Navbar */
+.navbar-brand img {
+    border-radius: 50%; /* Jika menggunakan logo berbentuk lingkaran */
+    margin-right: 8px; /* Jarak antara logo dan teks */
+}
+
+
+
+/* Hero Section */
+.bg-dark {
+    background-color: #DDD5C7 !important; /* Beige Pudar */
+    color: #2F2E2C !important; /* Warna teks utama */
+    padding: 50px 0;
+}
+.hero-section {
+    background-image: url('asset/2148895321.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Card Produk */
+.card {
+    background-color: #EFEFEF; /* Latar belakang kartu */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #2F2E2C; /* Warna teks utama */
+}
+
+.card-text {
+    color: #6D6B68; /* Warna teks sekunder */
+}
+
+.btn-primary {
+    background-color: #A69279; /* Coklat Kopi Susu */
+    border-color: #A69279;
+}
+
+.btn-primary:hover {
+    background-color: #806E5C; /* Coklat Gelap */
+    border-color: #806E5C;
+}
+
+/* Tombol "View All Products" */
+.btn-outline-primary {
+    color: #A69279;
+    border-color: #A69279;
+}
+
+.btn-outline-primary:hover {
+    background-color: #A69279;
+    color: #FFF;
+    border-color: #A69279;
+}
+
+/* Footer */
+footer {
+    background-color: #2F2E2C; /* Warna latar belakang footer */
+    color: #f5f5f5; /* Warna teks footer */
+    padding: 20px 0; /* Ruang di sekitar teks footer */
+    text-align: center; /* Teks footer di tengah */
+    width: 100%; /* Pastikan footer memenuhi lebar halaman */
+    position: relative; /* Posisi tetap untuk footer */
+    margin-top: auto;
+}
+
+/* Form Contact */
+form label {
+    color: #2F2E2C; /* Warna teks utama */
+}
+
+form input,
+form textarea {
+    border: 1px solid #A69279; /* Coklat Kopi Susu */
+    background-color: #EFEFEF; /* Abu Pudar */
+    color: #2F2E2C;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #806E5C; /* Coklat Gelap */
+    outline: none;
+}
+
+/* Hover States */
+a {
+    color: #A69279;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #806E5C;
+}
+
+/* Media query untuk ukuran layar kecil */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+    .card-title {
+        font-size: 1rem; /* Ukuran font produk pada layar kecil */
+    }
+}
